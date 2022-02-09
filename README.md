@@ -31,6 +31,8 @@ pause >nul
 
 - ### B4: Click chuột phải vào file đó và chọn `Run as administrator`
 
+- ### B5: Sau khi cài xong bạn có thể bắt đầu sử dụng bộ office
+
 > **Lưu ý:** Sẽ bị lỗi [Get Genuine Office](#fix-get-genuine-office) khi sử dụng
 
 ---
