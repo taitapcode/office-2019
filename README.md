@@ -43,14 +43,22 @@ pause >nul
 
 - ### B2: Click chuột phải và chọn `Run as administrator`
 
-- ### B3: Chạy 2 đoạn script sau:
+- ### B3: Di chuyển tới thư mục của bản office đó:
 
+- Với bản 64bit:
 ```powershell
-cd "\Program Files\Common Files\microsoft shared\ClickToRun"
+cd /d %ProgramFiles%\Microsoft Office\Office16
 ```
 
+- Với bản 32bit:
 ```powershell
-OfficeC2rclient.exe /update user updatetoversion=16.0.13801.20266
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
 ```
 
-- ### B3: Đợi cài đặt xong, vô `Account > Office Updates > Disable updates`
+- ### B4: Chạy 2 dòng lệnh sau đây
+```powershell
+cscript ospp.vbs /sethst:193.29.63.133
+cscript ospp.vbs /act
+```
+
+- ### B5: Đợi cài đặt xong, vô `Account > Office Updates > Disable updates`
