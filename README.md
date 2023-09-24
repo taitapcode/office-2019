@@ -33,32 +33,6 @@ pause >nul
 
 - ### B5: Sau khi cài xong bạn có thể bắt đầu sử dụng bộ office
 
-> **Lưu ý:** Sẽ bị lỗi [Get Genuine Office](#fix-get-genuine-office) khi sử dụng
-
----
-
-## Fix **Get Genuine Office**
-
-- ### B1: Mở thanh search và gõ `CMD`
-
-- ### B2: Click chuột phải và chọn `Run as administrator`
-
-- ### B3: Di chuyển tới thư mục của bản office đó:
-
-- Với bản 64bit:
-```powershell
-cd /d %ProgramFiles%\Microsoft Office\Office16
-```
-
-- Với bản 32bit:
-```powershell
-cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
-```
-
-- ### B4: Chạy 2 dòng lệnh sau đây
-```powershell
-cscript ospp.vbs /sethst:193.29.63.133
-cscript ospp.vbs /act
-```
+- ### B6: [**Active bằng cmd**](https://msguides.com/office-2019)
 
 - ### B5: Đợi cài đặt xong, vô `Account > Office Updates > Disable updates`
